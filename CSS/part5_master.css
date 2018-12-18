@@ -1,0 +1,36 @@
+/* specificty and understanding the hierarchy of styling
+https://designshack.net/articles/css/what-the-heck-is-css-specificity/ */
+
+li{
+  color: red;
+}
+
+/* class */
+.TopItems{
+  color: blue;
+}
+
+
+/* id */
+#two{
+  border: 3px solid black;
+}
+
+/* class and id for the same list item. ID wins */
+.three{
+  color: orange;
+}
+
+#th{
+color: purple;
+}
+
+/* same class twice; will always take the last one  */
+
+.me{
+  color: pink;
+}
+
+.me{
+color: green;
+}

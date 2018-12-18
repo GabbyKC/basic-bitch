@@ -1,0 +1,35 @@
+/* styling by divs */
+.firstDiv{
+  color: red;
+}
+.secondDiv{
+  color: blue;
+}
+
+/* styling by ids */
+#singledout{
+  color: green;
+  text-decoration:line-through;
+}
+
+/* applying to "all" */
+/* *{
+  color: black;
+} */
+
+/* combining adjacent siblings  */
+h3 + ul{
+  border: 10px dotted purple;
+}
+
+/* styling list items that have anchors  */
+li a{
+  color: red;
+}
+
+/* styling more specified: styling a specific href within an anchor that is in a list */
+
+li a[href="http://www.zageno.com"]{
+  color: blue;
+  border: 5px solid orange;
+}

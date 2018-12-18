@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: url("https://drinks-dvq6ncf.netdna-ssl.com/wordpress/wp-content/uploads/2018/01/field-clouds-sky-earth-46160-1-640x484.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+table {
+  margin:auto;
+  border-spacing: 30px;
+}
+
+td {
+  height: 400px;
+  width: 200px;
+}
+
+
+.pink-tones td:nth-child(1) {
+  background-color: #9C89B8;
+}
+
+.pink-tones td:nth-child(2) {
+  background-color: #F0A6CA;
+}
+
+.pink-tones td:nth-child(3) {
+  background-color: #EFC3E6;
+}
+
+.pink-tones td:nth-child(4) {
+  background-color: #F0E6EF;
+}
+
+.pink-tones td:nth-child(5) {
+  background-color: #B8BEDD
+}
+
+.green-tones td:nth-child(1) {
+  background-color: #114B5F
+}
+
+.green-tones td:nth-child(2) {
+  background-color: #1A936F
+}
+
+.green-tones td:nth-child(3) {
+  background-color: #88D498
+}
+
+.green-tones td:nth-child(4) {
+  background-color: #C6DABF
+}
+
+.green-tones td:nth-child(5) {
+  background-color: #F3E9D2
+}
