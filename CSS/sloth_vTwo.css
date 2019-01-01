@@ -1,15 +1,9 @@
-
 body {
     background: linear-gradient(#f1f2b5, #135058);
     font-family: 'Shadows Into Light Two', cursive;
     text-align: center;
     font-size: 24px;
     color: purple;
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 .headerimage {
@@ -50,7 +44,11 @@ img {
     color: yellow;
 }
 
-li {
+.top {
+    text-decoration: underline;
+}
+
+.list {
     list-style-position: inside;
 }
 
@@ -86,15 +84,10 @@ li {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 80%;
-    height: auto;
-    padding: 4px;
+    width: 550px;
+    height: 400px;
+    padding: 6px;
 }
-
-/* .column img:hover {
-    cursor: default;
-    transform: scale(1.2);
-} */
 
 .bottom {
     color: orange;
