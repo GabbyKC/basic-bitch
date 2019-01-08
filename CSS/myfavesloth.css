@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(#34c2c7, #07262a) fixed;
+    font-family: "Charm", cursive;
+    font-size: 24px;
+    color: white;
+    padding:0;
+    margin:0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+.sloth {
+    border-style: solid;
+    color: pink;
+    line-height: 0;
+}
+.description {
+    padding-left: 30px;
+}

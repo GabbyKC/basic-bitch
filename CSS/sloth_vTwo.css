@@ -4,6 +4,7 @@ body {
     text-align: center;
     font-size: 24px;
     color: purple;
+    margin: 0;
 }
 
 .headerimage {
@@ -74,6 +75,7 @@ body {
 .row {
     width: 100;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -87,6 +89,7 @@ body {
     width: 550px;
     height: 400px;
     padding: 6px;
+
 }
 
 .bottom {
