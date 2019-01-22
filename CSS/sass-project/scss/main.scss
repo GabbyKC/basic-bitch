@@ -1,12 +1,33 @@
+// Importing two parital files (variables and mixins)
 @import "../testing/variables";
+@import "../testing/mixins";
+
+
+// @include used for mixins
+@include google-font("Nanum+Gothic");
+@include google-font("Indie+Flower");
+
+@include fancy-links;
 
 body {
-  font-family: $text-font;
-  color: $text-color;
+    font-family: $text-font;
+    color: $text-color;
+    @include medium-screens {
+        background-color: pink;
+        font-size: 200%;
+    }
+    @include tiny-screens {
+        background-color: blue;
+        font-size: 150%;
+    }
 }
 
 h1, h2, h3, h4 {
     font-family: $headline-font;
+}
+
+h2 {
+    @include large-text;
 }
 
 p {
@@ -15,24 +36,49 @@ p {
 
 a {
     color: $link-color;
+    &:hover {
+        color: darken($link-color, 50%);
+    }
 }
 
+.warning-button {
+    @include warning;
+    padding: 8px 12px;
+}
+
+@include apply-to-ie-6 {
+    body {
+        font-size: 125%;
+    }
+}
+
+
 #header {
+    @include box(8px);
+    @include box-shadow(2px 8px 4px orange, 1px 1px 6px $secondary-color);
     height: $header-height;
     background-color: $theme-color;
 
-  #main-menu {
-      li {
-          display: inline;
-      }
-      a {
-          color: $menu-item-color;
-      }
-  }
+    #main-menu {
+        li {
+            display: inline;
+        }
+        a {
+            color: $menu-item-color;
+            padding: 6px 8px;
+            border-bottom: 1px solid transparentize(#da3535, 0);
+            transition: border-bottom 0.5s;
+            transition-timing-function: ease-in-out;
 
-  #logo {
+            &:hover {
+                border-bottom: 1px solid opacify(#fefefe, .5);
+            }
+        }
+    }
 
-  }
+    #logo {
+
+    }
 }
 
 #main {
@@ -40,11 +86,11 @@ a {
     margin-left: auto;
     margin-right: auto;
 
-  #content {
-  }
+    #content {
+    }
 
-  #sidebar {
-  }
+    #sidebar {
+    }
 }
 
 #footer {
