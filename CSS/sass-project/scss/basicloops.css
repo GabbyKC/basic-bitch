@@ -1,0 +1,27 @@
+.gabby-goo-profile {
+    background-image: url("image/gabby-goo.png")
+}
+
+.chrissy-woo-profile {
+    background-image: url("image/chrissy-woo.png")
+}
+
+.sammy-doo-profile {
+    background-image: url("image/sammy-doo.png")
+}
+
+.tiny {
+    font-size: 8px
+}
+
+.small {
+    font-size: 11px
+}
+
+.medium {
+    font-size: 13px
+}
+
+.large {
+    font-size: 18px
+}

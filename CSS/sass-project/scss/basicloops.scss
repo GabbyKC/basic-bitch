@@ -1,0 +1,17 @@
+// Just an example of loops used in sass
+
+// Using @each loop with lists. to understand what is going on here, see the output in css.
+$speakers: gabby-goo, chrissy-woo, sammy-doo;
+@each $speaker in $speakers {
+    .#{$speaker}-profile {
+        background-image: url("image/#{$speaker}.png");
+    }
+}
+
+// Using @each loops with maps
+$font-sizes: (tiny: 8px, small: 11px, medium: 13px, large: 18px);
+@each $name, $size in $font-sizes {
+    .#{$name} {
+        font-size: $size;
+    }
+}
