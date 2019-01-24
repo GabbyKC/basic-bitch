@@ -9,6 +9,16 @@
 
 @include fancy-links;
 
+.error {
+    color: red;
+}
+
+.critical-error {
+    @extend .error;
+    bottom: 1px solid red;
+    font-weight: bold;
+}
+
 body {
     font-family: $text-font;
     color: $text-color;
@@ -46,12 +56,20 @@ a {
     padding: 8px 12px;
 }
 
+// cta-button does not actually exist, just showing how it can inherit the styles of .warning-button by using
+// the @extend. The @include was added to have both an extended inheritance and a mixin.
+
+// .cta-button {
+//     @extend .warning-button;
+//     @include rounded;
+//     font-weight: bold;
+// }
+
 @include apply-to-ie-6 {
     body {
         font-size: 125%;
     }
 }
-
 
 #header {
     @include box(8px);
