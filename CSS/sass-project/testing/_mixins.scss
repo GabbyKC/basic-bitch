@@ -1,5 +1,19 @@
 // main:../scss/main.scss
 
+// brand mixins
+@mixin gabby-goo {
+    @if $brand == gabby-goo {
+        @content;
+    }
+}
+
+@mixin chrissy-woo {
+    @if $brand == chrissy-woo {
+        @content;
+    }
+}
+
+// screen related mixins
 @mixin tiny-screens() {
     @media only screen and (max-width: 320px) {
         @content;
@@ -23,6 +37,7 @@
         @content;
     }
 }
+
 
 @mixin google-font($font) {
     $font: unquote($font);

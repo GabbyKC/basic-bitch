@@ -1,12 +1,38 @@
 // main:../scss/main.scss
 
+// Brand is an eg of targeting different results for different "clients". Allowed values: gabby-goo, chrissy-woo.
+$brand: gabby-goo;
+
+// Themes
+// Allowed values: dark, light, default
+$theme: light;
+
 // Color Section
 $text-color:#6f0c80;
+$body-background-color: #f45b93;
 $theme-color: #da22de;
 $secondary-color: #4add1d;
 $ternary-color: #91d4ae;
 $link-color: $secondary-color;
 $menu-item-color: white;
+
+@if $theme == dark {
+    $text-color:#800c43;
+    $body-background-color: #5bf4ca;
+    $theme-color: #5922de;
+    $secondary-color: rgba(#eb2512, 0.71);
+    $ternary-color: #16eb72;
+    $link-color: $secondary-color;
+    $menu-item-color: white;
+} @else if $theme == light {
+    $text-color:#800c51;
+    $body-background-color: #5bcaf4;
+    $theme-color: #2c142d;
+    $secondary-color: #184e08;
+    $ternary-color: #7ae0a6;
+    $link-color: $secondary-color;
+    $menu-item-color: white;
+}
 
 // Font Section
 $text-font: "Nanum Gothic", arial, sans-serif;

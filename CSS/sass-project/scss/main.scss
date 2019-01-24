@@ -6,7 +6,6 @@
 // @include used for mixins
 @include google-font("Nanum+Gothic");
 @include google-font("Indie+Flower");
-
 @include fancy-links;
 
 .error {
@@ -19,9 +18,12 @@
     font-weight: bold;
 }
 
+// introduction to variables ($)
 body {
     font-family: $text-font;
     color: $text-color;
+    background: $body-background-color;
+
     @include medium-screens {
         background-color: pink;
         font-size: 200%;
@@ -31,6 +33,7 @@ body {
         font-size: 150%;
     }
 }
+
 
 h1, h2, h3, h4 {
     font-family: $headline-font;
@@ -44,6 +47,7 @@ p {
     font-family: $text-font;
 }
 
+// "darken" is built in
 a {
     color: $link-color;
     &:hover {
@@ -51,6 +55,7 @@ a {
     }
 }
 
+// "warning" is mixin. using include directive to include the styling from that mixin
 .warning-button {
     @include warning;
     padding: 8px 12px;
@@ -108,10 +113,16 @@ a {
     }
 
     #sidebar {
+        @include chrissy-woo {
+            float: right;
+        }
     }
 }
 
 #footer {
     height: $footer-height;
     background-color: $ternary-color;
+    @include gabby-goo {
+        border-bottom: 10px solid black;
+    }
 }
