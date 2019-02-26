@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Exercise</title>
+    </head>
+    <body>
+
+        <h1>Register</h1>
+
+        <form method="post">
+
+            <label>First Name <input type="text" name="" value="" required placeholder="John"> </label>
+            <label> Last Name <input type="text" name="" value="" required placeholder="Doe"> </label>
+
+            <br>
+
+            <label>Male <input type="radio" name="gender" value=""> </label>
+            <label>Female <input type="radio" name="gender" value=""> </label>
+            <label>Other <input type="radio" name="gender" value=""> </label>
+
+            <br>
+
+            <label>Email: <input type="email" name="" value="" required placeholder="example@gmail.com"> </label>
+            <label>Password: <input type="password" name="" value="" pattern=".{5,10}" required title="5 to 10 characters"> </label>
+
+            <br>
+
+            <label>Birthday:</label>
+            <select class="" name="">
+                <option value="" disabled selected hidden>Month</option>
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">March</option>
+            </select>
+
+            <select class="" name="">
+                <option value="" disabled selected hidden>Day</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select>
+
+            <select class="" name="">
+                <option value="" disabled selected hidden>Year</option>
+                <option value="">1991</option>
+                <option value="">1992</option>
+                <option value="">1993</option>
+            </select>
+
+            <br>
+
+            <p>I agree to the terms and conditions <input type="checkbox" name="" value=""></p>
+
+            <button type="submit" name="button">Submit</button>
+
+        </form>
+
+    </body>
+</html>

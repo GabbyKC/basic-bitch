@@ -30,6 +30,11 @@ function sleepIn(weekday, vacation) {
     return false;
 }
 
+// simplified version:
+
+function sleepIn(weekdeay, vacation){
+    return (!weekday || vacation)
+}
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -53,7 +58,9 @@ function monkeyTrouble(aSmile, bSmile) {
     }
     return false;
 }
-// or
+
+// simplified version:
+
 return ((aSmile && bSmile) || (!aSmile && !bSmile));
 
 //
@@ -77,6 +84,7 @@ function stringTimes(str, n) {
     }
     return returnStr
 }
+
 
 // PROBLEM 4: LUCKY SUM
 
